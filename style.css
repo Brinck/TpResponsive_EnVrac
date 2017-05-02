@@ -1,0 +1,204 @@
+/*
+Theme Name: Theme site Ludus1C
+Theme URI: Ludus1C.com
+Author: Charles Roche
+Description: Theme css site web Ludus1C
+Version: 1.0
+License: Ludus1C
+Licence URL: Ludus1C.com
+Text Domain: Ludus1C
+*/
+
+
+/*Police d'écriture*/
+@font-face{/*ajout de la police alex-brush*/
+    font-family: 'alex-brush';
+    src:url('alex-brush/AlexBrush-Regular.ttf');
+}
+
+/*Police de page par défaut*/
+*{ /*définition de la police et de sa couleur par défaut*/
+    font-family:'Shrikband', cursive, impact, sans-serif;
+    color:black;
+}
+
+/*Titre de page*/
+h1{ /* entourer le titre d'un cadre rouge avec des bords arrondis, un fond blanc et une ombre portée noire, définition de la taille du titre avec une couleur noire et une ombre portée grise */
+
+    text-align:center;
+    color:black;
+    text-shadow: 2px 2px 4px grey;
+    border:3px inset;
+    border-color:red;
+    border-radius:10px 10px 10px 10px;
+    background-color: white;
+    box-shadow:7px 7px 0px black;
+    width:30%;
+    margin:0 auto;
+
+}
+
+/*Titre dans les articles*/
+h2{ /*aligne les titres dans les articles au centre et les souligne*/
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Sous-titre dans les articles*/
+h3{ /*aligne les titres dans les articles au centre et les souligne*/
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Texte titre du footer*/
+h4{ /*aligne les sous-titres dans les articles au centre et les souligne et définit leur couleur sur blanc*/
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+/*Corps de la page*/
+body{ /*définition d'un fond d'écran qui couvre la page et qui se répète ou d'un fond blanc si l'image ne se charge pas */
+
+    color:white;
+    background-image:url("images/background.jpg"); 
+    background-repeat:repeat; 
+    background-size:cover; 
+}
+
+/* Corps du texte contenant les cours séparés en article*/
+article{ /* création d'une bordure rouge et d'un fond blanc pour chaque article, espacement de la marge des articles pour qu'ils ne soient pas recouverts par le menu, définition de la couleur du texte en noir */
+
+    text-align: justify;
+    border:4px solid;  
+    border-color: red;
+    background-color:white;  
+    margin-left: 240px; 
+    color:black; 
+}
+
+/*Propriétés des images*/
+.Images{ /* création d'une flex box pour les images, les centre entre elles mais les centre également par rapport au texte et définit leur taille*/
+    display:flex;
+    margin:auto;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+#ImageFooter{ /* création d'une flex box pour l'image footer, la centre par rapport au texte*/
+    display:flex;
+    margin:auto;
+    align-items: center;
+}
+
+/*Pied de page*/
+footer{ /*centrer le texte du pied de page et faire un fond noir sur toute la partie du pied de page*/
+
+    text-align: center; 
+    background-color: black;
+}
+
+
+/* Menu Gauche */
+#TitreMenu{ /* définit la taille, la police d'écriture et la position du titre du menu vertical*/
+
+    color:red;
+    font-family:'alex-brush','Shrikband', cursive, impact, sans-serif;
+    font-size:40px;
+    font-style:oblique;
+    font-weight:bold;
+    text-align:center;
+    text-decoration: underline;
+
+}
+
+li a { /* placement du texte au centre des cellules avec un espacement par rapport aux bords de la cellule pour qu'elles ne soient pas trop petites*/
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align:center;
+}
+
+li a:hover { /* quand on passe le pointeur dessus, les cellules du menu deviennent vertes et le texte devient noir */
+    background-color: green;
+    color: black;
+}
+
+ul { /* crée un menu à gauche fixe à gauche de la page sur fond noir avec un bord blanc fin*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: black;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    border: 1px solid white;
+}
+
+/* Formulaire*/
+form{
+    background-color:#FAFAFA;
+    padding:10px;
+    width:600px;
+}
+
+fieldset{
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid #DF3F3F;
+}
+
+input, textarea, select, option{
+    background-color:#FFF3F3;
+    padding:3px;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
+    width:200px:
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+
+select{
+    margin-top:10px;
+}
+
+input[type=radio]{
+    background-color:transparent;
+    border:none;
+    width:20px;
+}
+
+input[type=submit], input[type=reset]{
+    width:100px;
+    margin-left:9em;
+    box-shadow:1px 1px 1px #D83F3D;
+    cursor:pointer;
+}
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+label{
+    display: inline-block;
+    width: auto;
+    margin-top:10px;
+    color:black;
+}
+
+input, textarea{
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.button{
+    padding-left: auto;
+}

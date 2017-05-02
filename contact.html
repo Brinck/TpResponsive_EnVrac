@@ -1,0 +1,109 @@
+<!--Document au format html5-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>CV Charles ROCHE</title>
+		<link media="screen and (min-width: 1280px)" rel="stylesheet" type="text/css" href="style.css"/>
+		<link media="screen and (min-width: 640px) and (max-width: 1280px)" rel="stylesheet" type="text/css" href="Mobile.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+        <a href="index.html"><img src="images/Logo_EnVrac.jpg" alt="Logo_EnVrac" class="Images"/></a>
+        </br>
+        <h1>EnVrac</h1>
+		</header>
+
+		</br>
+
+    <aside>
+      <ul>
+        <li id="TitreMenu">Menu</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a href="projets.html">Projets</a></li>
+      </ul>
+    </aside>
+
+		</br>
+
+    <section>
+      <article>
+        <h2>Remplir le formulaire de contact</h2>
+      </article>
+    </section>
+
+    </br>
+
+  		<form method="POST/GET" action="#">
+        <fieldset>
+            <h2>Raison de la prise de contact </h2>
+            <label for="partenariat">Partenariat</label><input type="checkbox" name="partenariat" id="partenariat"/>
+            </br>
+
+            <label for="questions">Questions</label><input type="checkbox" name="questions" id="questions"/>
+            </br>
+
+            <label for="autre">Autre (préciser dans le message)</label><input type="checkbox" name="autre" id="autre"/>
+            </br>
+            </br>
+
+            <h2>Vos informations personnelles ("*" = oblitatoire)</h2>
+         		<label for="nom">Nom* :</label></br><input type="text" id="nom" value="Nom" autofocus required/>
+            </br>
+
+         		<label for="prénom">Prénom* :</label><input type="text" id="prénom" value="Prénom" required/>
+            </br>
+
+         		<label for="date">Date de naissance* :</label><input type="date" id="date" required/>
+            </br>
+
+            <label for="Pays">Votre pays*</label><br/>
+            <select name="pays" id="pays" required>
+              <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Allemagne">Allemangne</option>
+              </optgroup>
+
+              <optgroup label="Autre">
+                <option value="UK">Royaume-Uni</option>
+                <option value="Canada">Canada</option>
+              </optgroup>
+            </select>
+            </br>
+
+        		<label for="s1">Homme*</label><input type="radio" name="s" id="s1" value="H" required>
+            </br>
+
+        		<label for="s2">Femme*</label><input type="radio" name="s" id="s2" value="F" required>
+            </br>
+
+         		<label for="pseudo">Choisir un pseudo* :</label><input type="text" id="pseudo" value="Pseudo" required/>
+            </br>
+
+          	<label for="courriel">E-mail* :</label><input type="email" id="courriel" value="nom@exemple.com" required/>
+            </br>
+
+      			<label for="photo">Ajouter votre photo:</label><input type="file" accept="image/*" />
+            </br>
+
+          	<label for="message">Message* :</label><textarea rows="5" cols="50" id="message" required></textarea>
+            </br>
+            </br>
+
+        </fieldset>
+        <input class="button" type="submit" name="envoyer" value="Envoyer"">
+  		</form>
+
+    <footer>
+      <h4>@Etudiant Ludus : Charles ROCHE</h4>
+      <h4>©LudusAcademie</h4>
+      <img src="images/Ludus.gif" alt="Ludus" id="ImageFooter"/>
+    </footer>
+    
+	</body>
+</html>
